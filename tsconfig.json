@@ -19,11 +19,30 @@
         "name": "next"
       }
     ],
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./*"],
+      "@components/*": ["components/*"],
+      "@assets/*": ["assets/*"],
+      "@widget/*": ["components/widget/*"],
+      "@constants/*": ["constants/*"],
+      "@config/*": ["config/*"],
+      "@pages/*": ["pages/*"],
+      "@store/*": ["store/*"],
+      "@hooks/*": ["hooks/*"],
+      "@utils/*": ["utils/*"],
+      "@features/*": ["features/*"],
+      "@providers/*": ["providers/*"],
+      "@lib/*": ["lib/*"],
+      "@/types/*": ["types/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "commitlint.config.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "commitlint.config.js"
+  ],
   "exclude": ["node_modules"]
 }
