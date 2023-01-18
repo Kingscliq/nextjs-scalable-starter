@@ -1,4 +1,4 @@
-import { queryClient } from '@/lib';
+import { queryClient } from '@lib';
 import { QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { CookiesProvider } from 'react-cookie';
