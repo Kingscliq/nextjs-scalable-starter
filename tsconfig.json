@@ -14,35 +14,11 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"],
-      "@components/*": ["components/*"],
-      "@assets/*": ["assets/*"],
-      "@widget/*": ["components/widget/*"],
-      "@constants/*": ["constants/*"],
-      "@config/*": ["config/*"],
-      "@pages/*": ["pages/*"],
-      "@store/*": ["store/*"],
-      "@hooks/*": ["hooks/*"],
-      "@utils/*": ["utils/*"],
-      "@features/*": ["features/*"],
-      "@providers/*": ["providers/*"],
-      "@lib/*": ["lib/*"],
-      "@/types/*": ["types/*"]
+      "@/*": ["./src/*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "commitlint.config.js"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
