@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+import { logo } from 'public/assets'
 
-const inter = Inter({ subsets: ['latin'] })
+// import { Be_Vietnam_Pro } from '@next/font/google'
 
 export default function Home() {
   return (
@@ -17,6 +16,7 @@ export default function Home() {
       <main>
         <button className='btn btn-primary  capitalize rounded-sm'>Hey How are you</button>
         <p className='text-red-300'>Heyy</p>
+        <Image src={logo} alt={'Payforce Logo'} />
       </main>
     </>
   )
